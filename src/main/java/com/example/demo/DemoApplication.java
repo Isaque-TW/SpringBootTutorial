@@ -1,5 +1,6 @@
 package com.example.demo;
 
+HEAD
 import com.example.demo.student.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,12 +13,18 @@ import java.util.List;
 
 @SpringBootApplication
 @RestController
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+1ba734bc2b71df685df5318ddd6602d67373de43
 public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+HEAD
 	@GetMapping
 	public List<Student> hello () {
 		return List.of(
@@ -32,4 +39,5 @@ public class DemoApplication {
 		);
 	}
 
+1ba734bc2b71df685df5318ddd6602d67373de43
 }
